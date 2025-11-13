@@ -74,3 +74,13 @@ El objetivo es **comprender el comportamiento de ventas, identificar productos c
 git clone https://github.com/tu-usuario/online-retail1.git
 cd online-retail1
 pip install -r requirements.txt
+
+Crear un venv y:
+Después de instalar todo con pip install -r requirements.txt, registra el kernel del entorno con:
+python -m ipykernel install --user --name=dataScience --display-name "Python (dataScience)"
+
+... si no se deja: 
+Forzar la instalación (solo si sabes lo que haces) en un venv
+
+Puedes decirle a pip que ignore el bloqueo del sistema:
+pip install -r requirements.txt --break-system-packages

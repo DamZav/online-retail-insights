@@ -1,8 +1,18 @@
+# --- Ciencia de datos ---
 pandas
 numpy
 matplotlib
 seaborn
 scikit-learn
-Pillow
 scipy
+Pillow
+
+# --- Entorno interactivo (muy importante) ---
 ipython
+jupyter
+ipykernel
+notebook
+
+# --- Opcional pero recomendable ---
+jupyterlab
+ipywidgets
