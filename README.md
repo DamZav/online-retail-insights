@@ -89,6 +89,7 @@ El negocio presenta un modelo de alto volumen y bajo ticket promedio, con marcad
 
 Damaris A. Zavala  
 Data Scientist / Data Analyst
+
 Enfoque en análisis de datos, modelado predictivo y toma de decisiones basada en evidencia.
 
 ---
