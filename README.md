@@ -54,20 +54,17 @@ El negocio presenta un modelo de alto volumen y bajo ticket promedio, con marcad
 
 ---
 
-## 📂 Estructura del Proyecto
-data/
-notebooks/
-graphs/
-requirements.txt
-README.md
-conclusions.md
+## Estructura del Proyecto
+- data/
+- notebooks/
+- graphs/
+- requirements.txt
+- README.md
+- CONCLUSIONS.md
 
 ---
 
-
----
-
-## 🚀 Próximos Desarrollos
+## Próximos Desarrollos
 
 - Segmentación RFM + Clustering
 - Modelo de predicción de churn
