@@ -1,73 +1,101 @@
-# Análisis Exploratorio de Datos (EDA) - Online Retail
+# Análisis de Datos - Online Retail (2010–2011)
 
-Este proyecto presenta un **análisis exploratorio de datos (EDA)** del dataset *Online Retail*, que contiene información de transacciones reales de una tienda online del Reino Unido entre 2010 y 2011.  
-El objetivo es **comprender el comportamiento de ventas, identificar productos clave, analizar estacionalidad y devoluciones**, y preparar el terreno para un análisis predictivo posterior.
+## Descripción del Proyecto
 
----
+Este proyecto analiza datos transaccionales de retail online con el objetivo de identificar patrones de ingresos, comportamiento de clientes, concentración geográfica y oportunidades de modelado predictivo.
 
-## 1. Objetivos del proyecto
-
-- Explorar la estructura y calidad del dataset.  
-- Limpiar los datos eliminando duplicados y valores faltantes.  
-- Analizar el volumen de ventas por año, semestre y mes.  
-- Identificar los productos más vendidos.  
-- Analizar el comportamiento de devoluciones.  
-- Segmentar las transacciones según su monto total.  
-
----
-
-## 2. Dataset
+El enfoque combina limpieza de datos, análisis exploratorio e ingeniería de variables con orientación a decisiones de negocio.
 
 - **Fuente:** [UCI Machine Learning Repository - Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
-- **Registros:** ~540,000  
-- **Columnas principales:**
-  - `InvoiceNo`: número de factura  
-  - `StockCode`: código de producto  
-  - `Description`: descripción del producto  
-  - `Quantity`: cantidad vendida  
-  - `InvoiceDate`: fecha de la transacción  
-  - `UnitPrice`: precio unitario  
-  - `CustomerID`: identificador del cliente  
-  - `Country`: país de origen del cliente  
 
 ---
 
-## 3. Estructura del proyecto
+## Principales Hallazgos
 
-| Sección | Descripción |
-|----------|--------------|
-| **1. Carga y exploración** | Lectura del CSV, inspección general, valores nulos y duplicados. |
-| **2. Limpieza** | Eliminación de duplicados y nulos, creación de `TotalAmount`. |
-| **3. Análisis temporal** | Agrupación de ventas por año, mes y semestre. |
-| **4. Devoluciones** | Identificación de transacciones negativas y su proporción. |
-| **5. Segmentación por monto** | Clasificación de ventas en Low, Medium, High. |
-| **6. Productos más vendidos** | Ranking de productos según cantidad total vendida. |
-| **7. Conclusiones** | Hallazgos clave y propuestas de análisis adicional. |
+- ~8.28M en ingresos totales
+- 81% de los ingresos concentrados en Reino Unido
+- 44% más ingresos en el segundo semestre
+- 78% de las transacciones con ticket bajo (<20)
+- 2.2% tasa de devoluciones
+
+El negocio presenta un modelo de alto volumen y bajo ticket promedio, con marcada estacionalidad.
 
 ---
 
-## 4. Resultados principales
+## Metodología
 
-- El año 2011 concentra la mayor parte de las ventas.  
-- Las devoluciones representan una fracción menor pero relevante para control de calidad.  
-- Los productos más vendidos pertenecen a categorías de alto movimiento y bajo costo.  
-- Se observa estacionalidad con picos de ventas en el segundo semestre de 2012.  
+### 1 Limpieza de Datos
+- Eliminación de duplicados
+- Filtrado de registros sin CustomerID
+- Creación de variable de ingresos (Quantity × UnitPrice)
+
+### 2 Ingeniería de Variables
+- Extracción de año, mes y semestre
+- Segmentación por ticket de compra
+- Agregaciones temporales y geográficas
+
+### 3 Análisis Exploratorio
+- Evolución de ingresos
+- Distribución por país
+- Tasa de devoluciones
+- Segmentación por monto de transacción
 
 ---
 
-## 5. Tecnologías utilizadas
+## Tecnologías Utilizadas
 
 - **Python 3.10+**
-- **Jupyter Notebook**
-- **Pandas** (análisis de datos)
-- **Matplotlib** (visualización)
-- **Seaborn** (visualización avanzada)
+- **Pandas** 
+- **Matplotlib** 
 - **NumPy**
 - **scikit-learn** (para futuras extensiones de ML)
+- **Análisis temporal**
+- **Feature engineering**
 
 ---
 
-## 6. Instalación y uso
+## 📂 Estructura del Proyecto
+data/
+notebooks/
+graphs/
+requirements.txt
+README.md
+conclusions.md
+
+---
+
+
+---
+
+## 🚀 Próximos Desarrollos
+
+- Segmentación RFM + Clustering
+- Modelo de predicción de churn
+- Forecasting con estacionalidad
+- Estimación de CLV
+- Detección de anomalías
+
+---
+
+## Competencias Demostradas
+
+- Pensamiento analítico orientado a negocio
+- EDA estructurado
+- Transformación de datos transaccionales
+- Interpretación estratégica de resultados
+- Base sólida para modelado predictivo
+
+---
+
+## 👩‍💻 Autora
+
+Damaris A. Zavala  
+Data Scientist / Data Analyst
+Enfoque en análisis de datos, modelado predictivo y toma de decisiones basada en evidencia.
+
+---
+
+## Instalación y uso
 
 ### Clonar el repositorio:
 ```bash
