@@ -1,4 +1,4 @@
-# 📊 Conclusiones – Análisis de Retail Online (2010–2011)
+# Conclusiones – Análisis de Retail Online (2010–2011)
 
 ## Resumen Ejecutivo
 
