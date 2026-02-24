@@ -20,6 +20,7 @@ El enfoque combina limpieza de datos, análisis exploratorio e ingeniería de va
 
 El negocio presenta un modelo de alto volumen y bajo ticket promedio, con marcada estacionalidad.
 
+- Para principales hallazgos más a fondo: [CONCLUSIONS.md](https://github.com/DamZav/online-retail-insights/blob/main/CONCLUSIONS.md)
 ---
 
 ## Metodología
